@@ -1,0 +1,36 @@
+BODY {
+    background-color:darkslategray;
+}
+
+h1{
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    text-align: right;
+    color: white;
+}
+
+img{
+    background-image: url("../image/logo.jpg");
+    width: 304px;
+    height: 203px;
+}
+
+.alink{
+    color: red;
+}
+
+.cntr{
+    text-align: center;
+}
+
+#ndrln{
+    text-decoration: underline;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+#text_blue{ 
+    display: inline;
+    font-style: italic;
+    color: blue
+}
