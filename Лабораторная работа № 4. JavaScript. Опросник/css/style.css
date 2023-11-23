@@ -1,0 +1,422 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    background: #212121;
+    display: flex;
+    font-family: monospace;
+}
+
+header{
+    color: white;
+    margin: auto;    
+    background: #1b1b1b;
+    border: 1px #495057 solid;
+    border-radius: 15px;
+    padding: 30px;
+    transition: 1s;
+}
+
+.container h1{
+    background: rgb(68, 68, 68);
+    padding: 15px;
+    margin-top: 0;
+    line-height: 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.setting{
+    margin-top: 10px;
+}
+
+.setmenu{
+    display: flex;
+}
+
+.stolb{
+    margin: auto;
+    width: 100%;
+}
+
+header.menu input[type=text]{
+    text-align: center;
+    width: 100%;
+    color: white;
+    background: #4e4e4e;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+}
+
+header.menu input[type=checkbox]{
+    width: 50px;
+    height: 50px;
+    background: white;
+    margin: 0; 
+    opacity: 0.5;
+}
+
+header.menu input[type=time]{   
+    width: 100%;
+    font-size: 3em;
+    height: 100px;
+    text-align: center;
+    background: rgb(132, 132, 132);
+    border: none;
+}
+
+input[type="checkbox"]:checked ~ .lab{
+    text-shadow: 0 0 5px #FFF, 0 0 10px #4f87cc, 0 0 15px #4a5bdc,
+                 0 0 20px #0c2253, 2px 2px 2px rgba(206,89,55,0);
+}
+
+input[type=radio]{
+    width: 6px;
+    height: 6px;
+}
+
+input[type="radio"]:checked ~ .lab{
+    text-shadow: 0 0 5px #FFF, 0 0 10px #4f87cc, 0 0 15px #4a5bdc, 
+                 0 0 20px #0c2253, 2px 2px 2px rgba(206,89,55,0);
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+input[type=time]::before{
+    content: "Время таймера";
+    position: absolute;
+    font-size: 0.35em;
+    text-shadow: -0 -1px 0   #FFFFFF, 0   -1px 0   #FFFFFF, 
+                 -0    1px 0   #FFFFFF, 0    1px 0   #FFFFFF, 
+                 -1px -0   0   #FFFFFF, 1px -0   0   #FFFFFF,
+                  -1px  0   0   #FFFFFF, 1px  0   0   #FFFFFF,
+                   -1px -1px 0   #FFFFFF, 1px -1px 0   #FFFFFF, 
+                   -1px  1px 0   #FFFFFF, 1px  1px 0   #FFFFFF,
+                    -1px -1px 0   #FFFFFF, 1px -1px 0   #FFFFFF,
+                     -1px  1px 0   #FFFFFF, 1px  1px 0   #FFFFFF;
+    height: 80px;
+    width: 255px;
+}
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.407);
+    font-family: monospace;
+}
+
+input{
+    vertical-align: middle;
+}
+
+header.test input{
+    margin: auto;
+    margin-left: 8px;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background: #4e4e4e;
+    color: white;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+}
+
+label{
+    display: block;
+    background: #212121;
+    user-select: none;
+    cursor: pointer;
+    border: #4e4e4e solid;
+    border-width: 0 1px;
+}
+
+header.test label{
+    padding: 14px;
+}
+
+label:hover{
+    background: #1b1b1b;
+}
+
+.head_opros{
+    display: flex;
+}
+
+.pre_contain{
+    display: block;
+    width: 250px;
+    line-height: 2;
+    background: #2e2e2e;
+    height: 250px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: #737373 solid;
+    border-width: 1px;
+    overflow: hidden;
+}
+
+.pre_contain:first-child{
+    background-color: #363636;
+    margin-right: 15px;
+}
+
+.bottom_opros{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.oki{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ok{
+    display: block;
+    background: #4d4d4d;
+    padding: 10px;
+    font-size: 0.8em;
+    border-radius: 5px;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+}
+
+.ok:active{
+    outline: auto;
+}
+
+time{
+    margin: auto 0;
+    padding-bottom: 10px;
+}
+
+time::before{
+    content: "осталось";
+    position: absolute;
+    height: 10px;
+    margin-top: 3px;
+    padding: 7.5px;
+}
+
+header.test input[type=text]{
+    border-radius: 5px;
+    width: 100%;
+    padding: 0 10px;
+    border: none;
+    margin: 15px auto;
+    color: white;
+    line-height: 3;
+    background: #4e4e4e;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #4a5bdc, 0 0 15px #4a5bdc, 
+                 0 0 20px #0c2253, 2px 2px 2px rgba(206,89,55,0);
+}
+
+header.test input[type=text]::placeholder{
+    text-shadow: none;
+}
+
+header.test input[type=checkbox]{
+    opacity: 0.5;
+}
+
+header.test select{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 10px;
+    line-height: 3;
+    background: #737373;
+    color: white;
+    margin-top: 15px;
+    font-family: monospace;
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, 
+                -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 
+                 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, 
+                 -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+}
+
+.end_test{
+    position: absolute;
+    transform: translateY(-24px) translateX(380px);
+    border-radius: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+    user-select: none;
+}
+
+.input_test{
+    padding: 5px 0;
+    border-radius: 5px; 
+    margin-top: 5px;
+    background: #737373 ;
+    vertical-align: middle;
+}
+
+option{
+    font-size: 1.5em;
+}
+
+option[selected=true]{
+    background: red;
+}
+
+.end_test:hover{
+    text-decoration: underline;
+    border-radius: 10px;
+}
+
+button:hover{
+    animation: text_start 3s infinite;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px,
+                 #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px,
+                  #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, 
+                  #FF2D95 0px 0px 75px;
+}
+
+.txt_answ{
+    display: inline-block;
+    width: 100%;
+    height: 96%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+img.answer_img{
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+input[type=text]::after {
+    content: "Befre";
+    position: relative;
+    display: block;
+    color: green;
+}
+
+table th,table td{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+tr:nth-child(1){
+    font-weight: bold;
+}
+
+.chessboard {
+    display: block;
+    border-collapse: collapse;
+    font-size: 0.8em;
+}
+
+.chessboard tr:nth-child(odd) td:nth-child(even),
+.chessboard tr:nth-child(even) td:nth-child(odd) {
+    background-color: #363636;
+}
+
+td{
+    max-width: 200px;
+    text-align: center;
+}
+
+td:hover{
+    outline: auto;
+    outline-color: orange;
+    transform: scale(1.02);
+}
+
+.end_result{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-evenly;
+}
+
+.name_compare, .bal_compare, .start_compare, .rate_compare{
+    display: inline;
+    padding: 0 5px; 
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 0.7em;
+    line-height: 1.5;
+}
+
+.name_compare{
+    border: 1px yellow solid;
+    background: rgb(61, 61, 4);
+}
+
+.bal_compare{
+    border: 1px blue solid;
+    background: rgb(10, 10, 69);
+}
+
+.like_compare{
+    display: flex;
+    font-size: 0.7em;
+    line-height: 1.5;
+}
+
+.like_compare img{
+    vertical-align: text-bottom;
+}
+
+.plus{
+    padding: 0 5px;
+    border: 1px green solid;
+    border-radius: 5px 0 0 5px;
+    background: rgb(6, 44, 6);
+}
+.minus{
+    padding: 0 5px;
+    border: 1px red solid;
+    border-radius: 0 5px 5px 0;
+    background: rgb(62, 5, 5);
+}
+
+.start_compare, .rate_compare{
+    margin: 0;
+    cursor: pointer;
+    color: white;
+}
+
+.start_compare:hover{
+    font-weight: bold;
+}
+
+.start_compare:active{
+    transform: scale(1.2);
+}
+
+.rate_compare:active{
+    transform: scale(1.2);
+}
+
+tr.err td{
+    outline-color: red;
+    color: red;
+}
+
+tr.suc td{
+    outline-color: green;
+    color: green;
+}
+
+@keyframes text_start {
+    50%{
+        text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px,
+                     #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px;
+    }
+}
