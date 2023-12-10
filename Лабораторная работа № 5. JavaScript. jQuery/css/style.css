@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    background: orange;
+}
+
+header h1{
+    font-family: Brushboy, sans-serif;
+    text-align: center;
+    background: yellow;
+    padding: 5px;
+    border-radius: 25px;
+    border: 3px solid darkgoldenrod;
+}
+
+article{
+    font-family: Boozy,sans-serif;
+    font-size: 2em;
+    line-height: 0.8;
+    text-align: center;
+}
+
+.container{
+    margin: auto;
+    max-width: 700px;
+    margin-top: 20px;
+}
+
+.text-info{
+    background: darkorange;
+    padding: 10px;
+    border-radius: 25px;
+    border: 3px solid rgba(0, 0, 0, 0.515);
+    line-height: 1.2;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.bole{
+    color: green;
+    text-shadow: 1px 1px white;
+    font-size: 1.5em;
+    line-height: 0;
+}
+
+.mene{
+    color: darkred;
+    text-shadow: 1px 1px white;
+    font-size: 0.9em;
+    line-height: 0;
+}
+
+article p{
+    margin: 0 0 10px;
+}
+
+input{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+}
+
+.play{
+    border-radius: 25px;
+    border: black dashed;
+    padding: 15px;
+}
+
+input[type=number]{
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+
+    font-family: Brushboy, sans-serif;
+    font-size: 1em;
+}
+
+input[type=submit]{
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    font-family: Brushboy, sans-serif;
+    font-size: 1em;
+    background: yellow;
+}
+
+input[type=submit]:active{
+    font-size: 1.2em;
+}
+
+input::placeholder{
+    font-family: Brushboy, sans-serif;
+}
+
+.valid{
+    background: black;
+    color: white;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.valid p{
+    margin: 0;
+}
+
+#message{
+    text-align: center;
+    font-weight: bold;
+}
+
+.box {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    border: 1px black solid;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: #1E90FF;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#black, #red {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+}
+
+#black {
+    background-color: black;
+    left: 0;
+    bottom: 0;
+}
+
+#red {
+    background-color: red;
+    right: 0;
+    top: 0;
+}
+
+@font-face {
+    font-family: "Brushboy";
+    src: url(../font/ofont.ru_Brushboy.ttf);
+}
+
+@font-face {
+    font-family: "Boozy";
+    src: url(../font/ofont.ru_Boozy.ttf);
+}
+

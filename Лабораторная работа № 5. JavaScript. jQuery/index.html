@@ -1,0 +1,59 @@
+<!-- 21ВИ1 Малков Вариант 16  -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Малков - Лабораторная работа № 5. JavaScript. jQuery</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Лабораторная работа #5</h1>
+        </div>
+    </header>
+    
+    <article>
+        <div class="container">
+            <div class="text-info">
+                16) По экрану хаотично перемещаются несколько фигур. 
+                Стартовое количество объектов задает пользователь. 
+                В левом нижнем углу экрана располагается черный прямоугольник, 
+                а правом верхнем красный. Если фигура попадает внутрь чёрного 
+                прямоугольника, она исчезает и появляется из красного.
+            </div>
+        </div>
+    </article>
+    
+    <article>
+        <div class="container">
+            <div class="play">
+                <p>Напиши количество элементов</p>
+                <input type="number" id="num" placeholder="Количество шаров">
+                <input type="submit" id="start" value="Запустить">
+            </div>
+        </div>
+    </article>
+    
+    <article>
+        <div class="container">
+            <div class="valid">
+                <p id="message"></p>
+            </div>
+        </div>
+    </article> 
+
+    <footer>
+        <div class="container">
+            <div class="box" id="box">
+                <div class="rect" id="black"></div>
+                <div class="rect" id="red"></div>
+                <div id="circle_container"></div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
