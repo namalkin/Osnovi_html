@@ -1,0 +1,57 @@
+<!-- 21ВИ1 Малков Даниил Вариант 16 -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации на конкурс</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="head_data">
+                <img src="img/movie.png" width="80" alt="">
+                <div class="h">
+                    <h1>КОНКУРС</h1>
+                    <h2>«Киномарафон-киноМАНЩИЦА»</h2>
+                </div>
+            </div>
+            <form method="post" id="form_who" onsubmit="return false">
+
+                <div class="form_select">
+                    <div class="form_come">
+                        <div class="form_block">
+                            <label for="nick_name">@Никнейм или emal@:</label>
+                            <input type="text" autocomplete="nick_name" name="nick_name" id="nick_name"
+                                placeholder="Namalkin">
+                        </div>
+                    </div>
+                    <div class="form_come">
+                        <div class="form_block">
+                            <label for="pass_word">Пароль:</label>
+                            <input type="pass_word" autocomplete="pass_word" name="pass_word" id="pass_word">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="okey_table"></div>
+
+                <div class="form_block flxwrap">
+                    <input type="submit" id="reg" value="Зарегистрироваться">
+                    <input type="submit" id="come" value="Войти">
+                </div>
+
+            </form>
+        </div>
+    </header>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

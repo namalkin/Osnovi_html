@@ -1,0 +1,367 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: saddlebrown;
+}
+
+header {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    max-width: 720px;
+    width: 100%;
+    font-family: "SNFBSTRD", sans-serif;
+    padding: 10px;
+    margin: auto;
+    background: rgb(107, 46, 6);
+    border-radius: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_block {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input,
+select {
+    width: 100%;
+    border: none;
+    font-family: "SNFBSTRD", sans-serif;
+    border-radius: 10px;
+    padding: 40px 10px 10px 15px;
+    background: #62dbfb;
+    letter-spacing: 2px;
+}
+
+option {
+    margin: 5px;
+}
+
+label,
+.osn_label {
+    opacity: 0.7;
+    margin-right: 10px;
+    font-weight: bold;
+    transform: translateY(25px) translateX(15px);
+    cursor: pointer;
+    user-select: none;
+}
+
+.osn_label {
+    font-size: 12px;
+}
+
+span {
+    color: red;
+    font-style: italic;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+input[type="submit"] {
+    padding: 20px;
+    font-family: 'SNFBSTRD', sans-serif;
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #fd4755;
+}
+
+input[type="submit"]:active {
+    transform: scale(0.9);
+    opacity: 0.7;
+}
+
+.err {
+    outline: auto;
+    outline-color: red;
+}
+
+fieldset {
+    width: 100%;
+    margin-top: 13px;
+    border-radius: 10px;
+    color: #fd4755;
+    font-weight: 100;
+    letter-spacing: 4px;
+    border-color: #62dbfb;
+}
+
+fieldset label {
+    width: 100%;
+    display: flex;
+    transform: none;
+    align-items: center;
+    margin-top: 11px;
+}
+
+fieldset label:nth-child(2) {
+    margin: 0;
+}
+
+fieldset label input {
+    width: auto;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    margin-right: 16px;
+    border-radius: 10px;
+
+}
+
+.osn_label {
+    margin-top: 0 !important;
+}
+
+.h {
+    text-align: right;
+    letter-spacing: 5px;
+}
+
+.h h1 {
+    color: #62dbfb;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.h h2 {
+    margin: 0;
+    font-size: 0.9em;
+    color: #fd4755;
+    font-weight: 100;
+}
+
+.head_data {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.head_data img {
+    margin: 5px;
+}
+
+.form_select {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.input_select {
+    margin-right: 12px;
+}
+
+.flxwrap {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+}
+
+input[id="come"] {
+    margin-right: 6px;
+}
+
+input[id="reg"] {
+    width: 200%;
+    margin-left: 6px;
+}
+
+.form_come:nth-child(1) {
+    margin-right: 12px;
+}
+
+.form_table {
+    width: 100%;
+}
+
+.user_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.user_info div {
+    text-align: center;
+    margin-right: 10px;
+}
+
+.circle_ava {
+    background: wheat;
+    padding: 5px;
+    border-radius: 5px 50px 50px 5px;
+}
+
+.plan_text {
+    font-size: 2.3em;
+}
+
+.acc {
+    background: wheat;
+    padding: 5px;
+    border-radius: 50px 5px 5px 50px;
+    margin: 0 !important;
+    cursor: pointer;
+    user-select: none;
+}
+
+.acc:active {
+    transform: scale(1.2);
+}
+
+.okey_table {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+.film_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.film_table th,
+.film_table td {
+    border: 1px solid saddlebrown;
+    padding: 8px;
+    text-align: center;
+    max-width: 125px;
+}
+
+.film_table th {
+    background-color: saddlebrown;
+}
+
+p.plan_text {
+    font-size: 1.5em;
+    opacity: 0.9;
+    margin: 5px 0;
+    letter-spacing: 10px;
+}
+
+article {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.modal_okno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+
+.head_modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+.modal_ob{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: center;
+    width: 100%;
+}
+
+.modal_data{
+    width: 100%;
+}
+
+.modal_ob div{
+    width: 100%;
+}
+
+.modal_ob p{
+    display: inline-block;
+    background: wheat;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.modal_ob div:nth-child(1){
+    text-align: right;
+    margin-right: 10px;
+}
+
+.modal_ob div:nth-child(1) p{
+    border-radius: 50px 5px 5px 50px;
+    padding-left: 10px;
+}
+
+.modal_ob div:nth-child(2) p{
+    border-radius: 5px 50px 50px 5px;
+    padding-right: 10px;
+}
+
+.name_okno{
+    background: wheat;
+    padding: 5px;
+    border-radius: 5px 50px 50px 5px;
+    padding-right: 10px;
+}
+
+.close {
+    font-size: 2em;
+    cursor: pointer;
+    user-select: none;
+    background: #fd4755;
+    display: inline-block;
+    padding: 0 8px;
+    text-align: right;
+    border-radius: 10px;
+    line-height: 1;
+}
+
+article .container {
+    max-width: 770px;
+}
+
+.close:active {
+    transform: scale(2);
+}
+
+.err_mess{
+    background: red;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-left: 6px;
+}
+
+@font-face {
+    font-family: "SNFBSTRD";
+    src: url(../font/SNFBSTRD_handwrite.ttf);
+}

@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Даниил малков",
+        "nickname": "namalkin",
+        "password": "111222",
+        "email": "nanomalkin@gmail.com",
+        "country": "Россия",
+        "age": "22",
+        "genres": [
+            "Триллер",
+            "Фэнтези",
+            "Документальный"
+        ],
+        "applications": [
+            {
+                "title": "мстители финал",
+                "genres": [
+                    "Комедия",
+                    "Приключения",
+                    "Документальный"
+                ],
+                "description": "Оставшиеся в живых члены команды Мстителей и их союзники должны разработать новый план, который поможет противостоять разрушительным действиям могущественного титана Таноса. ",
+                "trailer": "https:\/\/www.youtube.com\/watch?v=TcMBFSGVi1c",
+                "chatLink": "https:\/\/www.youtube.com\/watch?v=TcMBFSGVi1c",
+                "date": "2024-01-20T15:00",
+                "number": 1
+            }
+        ]
+    }
+]
